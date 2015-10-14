@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<Ibox>
+	<CDTimeStart>60</CDTimeStart><!--CDTimeStart表示正常操作界面超时时间-->
+	<CDTimeStartErrMsg>60</CDTimeStartErrMsg><!--CDTimeStartErrMsg表示错误信息界面超时时间-->
+	<CDTimeCloseDoor>60</CDTimeCloseDoor><!--CDTimeCloseDoor表示关门界面超时时间-->
+	<CDTimeConnunication>60</CDTimeConnunication><!--CDTimeConnunication表示通讯界面超时时间-->
+	<IsIDCardReader>1</IsIDCardReader><!--IsIDCardReader=0时表示身份证不可手动输入，IsIDCardReader=1时，表示即可刷身份证，又可手动输入身份证号码-->
+	<IsICCardReader>1</IsICCardReader><!--IsIDCardReader=0时表示用户卡号不可手动输入，IsIDCardReader=1时，表示即可刷又可手动输入用户卡号-->
+</Ibox>

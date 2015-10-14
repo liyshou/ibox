@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--广告-->
+<ad>
+	<Xparameters>
+		<Xwidth>1024</Xwidth>
+		<Xheight>550</Xheight>
+	</Xparameters>
+	<images>
+		<image src="images/1.jpg" time="10"/>
+		<image src="images/2.jpg" time="10"/>
+		<image src="images/3.jpg" time="10"/>
+		<image src="images/4.jpg" time="10"/>
+		<image src="images/5.jpg" time="10"/>
+		<image src="images/6.jpg" time="10"/>
+		<image src="images/7.jpg" time="10"/>
+	</images>
+</ad>

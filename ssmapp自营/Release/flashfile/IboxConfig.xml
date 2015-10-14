@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<Ibox>
+	<!--BackgroundImage=0时表示邮政界面背景，BackgroundImage=1时，表示协达界面背景-->
+	<BackgroundImage>1</BackgroundImage>
+	<!--PlayAD为0表示播放广州广告，PlayAD为1表示播放深圳广告-->
+	<PlayAD>1</PlayAD>
+	<!--SingleVersion为0时，表示脱机版界面不显示包裹超时回收时间选择内容;SingleVersion为1时，表示脱机版界面显示包裹超时回收时间选择内容-->
+	<SingleVersion>1</SingleVersion>
+	<!--CDTimeStart表示正常操作界面超时时间-->
+	<CDTimeStart>60</CDTimeStart>
+	<!--CDTimeStartErrMsg表示错误信息界面超时时间-->
+	<CDTimeStartErrMsg>10</CDTimeStartErrMsg>
+	<!--CDTimeCloseDoor表示关门界面超时时间-->
+	<CDTimeCloseDoor>60</CDTimeCloseDoor>
+	<!--CDTimeConnunication表示通讯界面超时时间-->
+	<CDTimeConnunication>60</CDTimeConnunication>
+	<!--IsIDCardReader=0时表示身份证不可手动输入，IsIDCardReader=1时，表示即可刷身份证，又可手动输入身份证号码-->
+	<IsIDCardReader>1</IsIDCardReader>
+	<!--IsIDCardReader=0时表示用户卡号不可手动输入，IsIDCardReader=1时，表示即可刷又可手动输入用户卡号-->
+	<IsICCardReader>1</IsICCardReader>
+	<!--1个柜时整体X轴位置向右移302，2个柜时整体偏移值为151，3个柜时整体偏移值为0-->
+	<displacement>302</displacement>
+	<!--人工模式为0，智能模式为1-->
+	<AIworkMode>1</AIworkMode>
+	<!--X表示箱的X轴位置，Y表示箱的Y轴位置，Width表示箱的宽度，Height表示箱的高度-->
+	<!--<CabinetL>柜1左边柜位置-->
+	<descendants X="65" Y="215" Width="90" Height="40"/>
+	<descendants X="65" Y="260" Width="90" Height="40"/>
+	<descendants X="65" Y="305" Width="90" Height="52"/>
+	<descendants X="65" Y="363" Width="90" Height="52"/>
+	<descendants X="65" Y="421" Width="90" Height="52"/>
+	<descendants X="65" Y="479" Width="90" Height="92"/>
+	<descendants X="65" Y="577" Width="90" Height="92"/>
+	<descendants X="163" Y="215" Width="90" Height="40"/>
+	<descendants X="163" Y="260" Width="90" Height="40"/>
+	<descendants X="163" Y="421" Width="90" Height="52"/>
+	<descendants X="163" Y="479" Width="90" Height="92"/>
+	<descendants X="163" Y="577" Width="90" Height="92"/>
+	<descendants X="261" Y="215" Width="90" Height="40"/>
+	<descendants X="261" Y="260" Width="90" Height="40"/>
+	<descendants X="261" Y="305" Width="90" Height="52"/>
+	<descendants X="261" Y="363" Width="90" Height="52"/>
+	<descendants X="261" Y="421" Width="90" Height="52"/>
+	<descendants X="261" Y="479" Width="90" Height="92"/>
+	<descendants X="261" Y="577" Width="90" Height="92"/>
+	<!--<CabinetM>柜2中间柜位置-->
+	<descendants X="367" Y="215" Width="90" Height="40"/>
+	<descendants X="367" Y="260" Width="90" Height="40"/>
+	<descendants X="367" Y="305" Width="90" Height="52"/>
+	<descendants X="367" Y="363" Width="90" Height="52"/>
+	<descendants X="367" Y="421" Width="90" Height="52"/>
+	<descendants X="367" Y="479" Width="90" Height="92"/>
+	<descendants X="367" Y="577" Width="90" Height="92"/>
+	<descendants X="465" Y="215" Width="90" Height="40"/>
+	<descendants X="465" Y="260" Width="90" Height="40"/>
+	<descendants X="465" Y="421" Width="90" Height="52"/>
+	<descendants X="465" Y="479" Width="90" Height="92"/>
+	<descendants X="465" Y="577" Width="90" Height="92"/>
+	<descendants X="563" Y="215" Width="90" Height="40"/>
+	<descendants X="563" Y="260" Width="90" Height="40"/>
+	<descendants X="563" Y="305" Width="90" Height="52"/>
+	<descendants X="563" Y="363" Width="90" Height="52"/>
+	<descendants X="563" Y="421" Width="90" Height="52"/>
+	<descendants X="563" Y="479" Width="90" Height="92"/>
+	<descendants X="563" Y="577" Width="90" Height="92"/>
+	<!--<CabinetR>柜3右边柜位置-->
+	<descendants X="667" Y="215" Width="90" Height="40"/>
+	<descendants X="667" Y="260" Width="90" Height="40"/>
+	<descendants X="667" Y="305" Width="90" Height="52"/>
+	<descendants X="667" Y="363" Width="90" Height="52"/>
+	<descendants X="667" Y="421" Width="90" Height="52"/>
+	<descendants X="667" Y="479" Width="90" Height="92"/>
+	<descendants X="667" Y="577" Width="90" Height="92"/>
+	<descendants X="765" Y="215" Width="90" Height="40"/>
+	<descendants X="765" Y="260" Width="90" Height="40"/>
+	<descendants X="765" Y="421" Width="90" Height="52"/>
+	<descendants X="765" Y="479" Width="90" Height="92"/>
+	<descendants X="765" Y="577" Width="90" Height="92"/>
+	<descendants X="863" Y="215" Width="90" Height="40"/>
+	<descendants X="863" Y="260" Width="90" Height="40"/>
+	<descendants X="863" Y="305" Width="90" Height="52"/>
+	<descendants X="863" Y="363" Width="90" Height="52"/>
+	<descendants X="863" Y="421" Width="90" Height="52"/>
+	<descendants X="863" Y="479" Width="90" Height="92"/>
+	<descendants X="863" Y="577" Width="90" Height="92"/>
+</Ibox>

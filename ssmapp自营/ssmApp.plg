@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ssmApp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ssmApp.res" /d "NDEBUG" /d "_AFXDLL" "E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\ssmApp.rc"" 
+Creating temporary file "C:\DOCUME~1\L\LOCALS~1\Temp\RSP112.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/ssmApp.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\ssmApp.cpp"
+"E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\L\LOCALS~1\Temp\RSP112.tmp" 
+Creating temporary file "C:\DOCUME~1\L\LOCALS~1\Temp\RSP113.tmp" with contents
+[
+Ws2_32.lib .\lib\*.lib shlwapi.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/ssmApp.pdb" /machine:I386 /out:"Release/ssmApp.exe" 
+".\Release\actzt598.obj"
+".\Release\Des.obj"
+".\Release\KTView.obj"
+".\Release\Log.obj"
+".\Release\Markup.obj"
+".\Release\Queue.obj"
+".\Release\shockwaveflash.obj"
+".\Release\ssmApp.obj"
+".\Release\ssmAppDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\stmdevice.obj"
+".\Release\TranProDlg.obj"
+".\Release\TranProThread.obj"
+".\Release\VarData.obj"
+".\Release\webbrowser2.obj"
+".\Release\ssmApp.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\L\LOCALS~1\Temp\RSP113.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ssmApp.cpp
+TranProDlg.cpp
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(78) : warning C4018: '<' : signed/unsigned mismatch
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(675) : warning C4018: '<' : signed/unsigned mismatch
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(1651) : warning C4101: 'iRet' : unreferenced local variable
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(2766) : warning C4018: '<' : signed/unsigned mismatch
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(2791) : warning C4018: '<' : signed/unsigned mismatch
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(2798) : warning C4018: '<' : signed/unsigned mismatch
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(2806) : warning C4018: '<' : signed/unsigned mismatch
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(2815) : warning C4018: '<' : signed/unsigned mismatch
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(2824) : warning C4018: '<' : signed/unsigned mismatch
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(2831) : warning C4018: '<' : signed/unsigned mismatch
+E:\KingTeller\KingPeace\ssmApp\代码\ssmapp\TranProDlg.cpp(3143) : warning C4018: '<' : signed/unsigned mismatch
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ssmApp.exe - 0 error(s), 11 warning(s)
+</pre>
+</body>
+</html>

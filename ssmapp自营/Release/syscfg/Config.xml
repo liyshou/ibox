@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<KingPeace>
+	<Terminal>
+		<HostKey disc="广州邮政后台通信密钥">98989898</HostKey>
+		<LocalKey disc="本地密码加密密钥">12345678</LocalKey>
+		<TerminalID disc="柜编号">10000</TerminalID>
+		<BankID>123456</BankID>
+		<SerialNumber>006234</SerialNumber>
+		<NetTimeout disc="网络超时 单位:秒">10</NetTimeout>
+		<ScanDBInterval disc="定时扫描数据库的时间，单位：秒">60</ScanDBInterval>
+		<SelfCheckInterval disc="设备自检间隔,单位:秒">600</SelfCheckInterval>
+		<MonitorInterval disc="设备状态报告间隔,单位:秒">600</MonitorInterval>
+		<BoxMonitorInterval disc="格口状态报告间隔,单位:秒">43200</BoxMonitorInterval>
+		<TransactionQueueInterval disc="交易队列轮询间隔,单位:秒">30</TransactionQueueInterval>
+		<PostDelaySend disc="投递交易延时处理">1</PostDelaySend>
+		<TakeoutDelaySend disc="取件交易延时处理">1</TakeoutDelaySend>
+		<LoginInOffLine disc="脱机登陆">1</LoginInOffLine>
+		<LoginInOnLineWhileOffLineFail disc="脱机登陆失败后联机登陆">1</LoginInOnLineWhileOffLineFail>
+		<DownloadOffLineData disc="下载脱机数据时间,24小时制,13表示下午1点">23</DownloadOffLineData>
+		<PostFailOpenDoor disc="投递交易实时处理失败开箱">1</PostFailOpenDoor>
+		<AllowRepeatIDNO disc="允许读取重复身份证或IC卡">0</AllowRepeatIDNO>
+		<UpdateTime disc="从服务器更新时间">0</UpdateTime>
+		<Register>0</Register>
+	</Terminal>
+	<HardWare>
+		<Locker>
+			<Name>柜锁</Name>
+			<Port>2</Port>
+			<Level disc="设备等级:1,关键设备，初始化失败不能服务; 2,可选设备，初始化失败可进服务">2</Level>
+			<Exist disc="是否装备">1</Exist>
+		</Locker>
+		<IDCardReader>
+			<Name>身份证读卡器</Name>
+			<Type disc="1:GTICR100,2:iDR210">2</Type>
+			<Level>2</Level>
+			<Exist>1</Exist>
+		</IDCardReader>
+		<BarCodeReader>
+			<Name>条码扫描仪</Name>
+			<Port>6</Port>
+			<Level>2</Level>
+			<Exist>0</Exist>
+		</BarCodeReader>
+		<PIN>
+			<Name>密码键盘</Name>
+			<Port>1</Port>
+			<Level>2</Level>
+			<Exist>0</Exist>
+		</PIN>
+	</HardWare>
+	<Box>
+		<CurrentOption disc="当前使用方案">2</CurrentOption>
+		<Option1 disc="自定义方案，x代_x拖x_x格_地点">
+			<BoxCount disc="每个柜配置的箱总数,逗号分隔"></BoxCount>
+			<BoxHigh disc="箱高度:1底层2中层3高层,逗号分隔"></BoxHigh>
+			<BoxType disc="箱类型:0屏蔽1超小2小3中4大5超大,逗号分隔"></BoxType>
+		</Option1>
+		<Option2 disc=“经典一代19格”>
+			<BoxCount>19</BoxCount>
+			<BoxHigh>3,3,2,2,2,1,1,3,3,2,1,1,3,3,2,2,2,1,1</BoxHigh>
+			<BoxType>2,2,3,3,3,4,4,2,2,3,4,4,2,2,3,3,3,4,4</BoxType>
+		</Option2>
+		<Option3 disc=“一代_一拖二_56格_广州富力”>
+			<BoxCount>18,19,19</BoxCount>
+			<BoxHigh>3,3,2,2,2,1,3,3,2,1,1,3,3,2,2,2,1,1,3,3,2,2,2,1,1,3,3,2,1,1,3,3,2,2,2,1,1,3,3,2,2,2,1,1,3,3,2,1,1,3,3,2,2,2,1,1</BoxHigh>
+			<BoxType>2,2,3,3,3,4,2,2,3,4,4,2,2,3,3,3,4,4,2,2,3,3,3,4,4,2,2,3,4,4,2,2,3,3,3,4,4,2,2,3,3,3,4,4,2,2,3,4,4,2,2,3,3,3,4,4</BoxType>
+		</Option3>
+		<Option4 disc=“一代18格_骏源”>
+			<BoxCount>18</BoxCount>
+			<BoxHigh>3,3,2,2,2,1,3,3,2,1,1,3,3,2,2,2,1,1</BoxHigh>
+			<BoxType>2,2,3,3,3,4,2,2,3,4,4,2,2,3,3,3,4,4</BoxType>
+		</Option4>
+		<Option5 disc=“一代一拖一37格_广州陆居”>
+			<BoxCount>19,18</BoxCount>
+			<BoxHigh>3,3,2,2,2,1,1,3,3,2,1,1,3,3,2,2,2,1,1,3,3,2,2,2,1,3,3,2,1,1,3,3,2,2,2,1,1</BoxHigh>
+			<BoxType>2,2,3,3,3,4,4,2,2,3,4,4,2,2,3,3,3,4,4,2,2,3,3,3,4,2,2,3,4,4,2,2,3,3,3,4,4</BoxType>
+		</Option5>
+		<Option6 disc=“一代19格_上排大柜_中山西区”>
+			<BoxCount>19</BoxCount>
+			<BoxHigh>3,3,2,2,2,1,1,3,3,2,1,1,3,3,2,2,2,1,1</BoxHigh>
+			<BoxType>4,3,3,3,2,2,4,4,3,2,2,4,4,3,3,3,2,2,4</BoxType>
+		</Option6>
+		<Option7 disc=“二代普通18格”>
+			<BoxCount>18</BoxCount>
+			<BoxHigh>3,3,2,2,2,2,2,1,1,3,3,2,2,2,2,2,1,1</BoxHigh>
+			<BoxType>4,3,2,2,2,2,2,3,4,4,3,2,2,2,2,2,3,4</BoxType>
+		</Option7>
+		<Option8 disc=“二代一拖二36格”>
+			<BoxCount>18,18</BoxCount>
+			<BoxHigh>3,3,2,2,2,2,2,1,1,3,3,2,2,2,2,2,1,1,3,3,2,2,2,2,2,1,1,3,3,2,2,2,2,2,1,1</BoxHigh>
+			<BoxType>4,3,2,2,2,2,2,3,4,4,3,2,2,2,2,2,3,4,4,3,2,2,2,2,2,3,4,4,3,2,2,2,2,2,3,4</BoxType>
+		</Option8>
+		<BoxSizeCount disc="不同尺寸的箱的数量">5</BoxSizeCount>
+		<BoxSize1 disc="箱类型1参数">
+			<Length disc="长">45</Length>
+			<Width disc="宽">40</Width>
+			<Height disc="高">10</Height>
+		</BoxSize1>
+		<BoxSize2>
+			<Length>45</Length>
+			<Width>40</Width>
+			<Height>20</Height>
+		</BoxSize2>
+		<BoxSize3>
+			<Length>45</Length>
+			<Width>40</Width>
+			<Height>30</Height>
+		</BoxSize3>
+		<BoxSize4>
+			<Length>45</Length>
+			<Width>40</Width>
+			<Height>40</Height>
+		</BoxSize4>
+		<BoxSize5>
+			<Length>45</Length>
+			<Width>40</Width>
+			<Height>50</Height>
+		</BoxSize5>
+	</Box>
+	<Service>
+		<SMS>
+			<IP>10.194.16.179</IP>
+			<Port>8092</Port>
+		</SMS>
+	</Service>
+	<DataBase>
+		<IP>localhost</IP>
+		<Port>3306</Port>
+		<User>root</User>
+		<PW>root</PW>
+		<DBName disc="数据库名称">ibox_guangzhou</DBName>
+	</DataBase>
+	<Management>
+		<ManagePAN>
+			<PAN disc="投递站管理卡"></PAN>
+		</ManagePAN>
+		<VenderPAN>
+			<PAN disc="厂家维护卡">3069679263</PAN>
+			<PAN disc="厂家维护卡">3069671073</PAN>
+			<PAN disc="厂家维护卡">3069675679</PAN>
+			<PAN disc="厂家维护卡">3175422332</PAN>
+		</VenderPAN>
+		<ManagePW>75D1AC482F293A21</ManagePW>
+		<ExitPW>0E7CBB931C3F4F95</ExitPW>
+	</Management>
+</KingPeace>
