@@ -1,0 +1,16 @@
+#ifndef __MyDes_h__
+#define __MyDes_h__
+
+
+enum {ENCRYPT,DECRYPT};
+
+//////////////////////////////////////////////////////////////////////////
+
+// 加/解密 Type—ENCRYPT:加密,DECRYPT:解密
+void Des_Run(char Out[8], char In[8], bool Type=ENCRYPT);
+// 设置密钥
+void Des_SetKey(const char Key[8]);
+
+//////////////////////////////////////////////////////////////////////////
+
+#endif // __MyDes_h__

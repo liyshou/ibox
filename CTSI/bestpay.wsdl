@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://127.0.0.1:8081/bppf_inf/services/DealProcessor" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://127.0.0.1:8081/bppf_inf/services/DealProcessor" xmlns:intf="http://127.0.0.1:8081/bppf_inf/services/DealProcessor" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+
+   <wsdl:message name="dispatchCommandIPOSResponse">
+
+      <wsdl:part name="dispatchCommandIPOSReturn" type="soapenc:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="dispatchCommandResponse">
+
+      <wsdl:part name="dispatchCommandReturn" type="soapenc:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="dispatchCommandRequest">
+
+      <wsdl:part name="in0" type="soapenc:string">
+
+      </wsdl:part>
+
+      <wsdl:part name="in1" type="soapenc:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="dispatchCommandIPOSRequest">
+
+      <wsdl:part name="in0" type="soapenc:string">
+
+      </wsdl:part>
+
+      <wsdl:part name="in1" type="soapenc:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="dispatchCommandEXTRequest">
+
+      <wsdl:part name="in0" type="soapenc:string">
+
+      </wsdl:part>
+
+      <wsdl:part name="in1" type="soapenc:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="dispatchCommandEXTResponse">
+
+      <wsdl:part name="dispatchCommandEXTReturn" type="soapenc:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="DealProcessorServiceImpl">
+
+      <wsdl:operation name="dispatchCommand" parameterOrder="in0 in1">
+
+         <wsdl:input message="impl:dispatchCommandRequest" name="dispatchCommandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:dispatchCommandResponse" name="dispatchCommandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="dispatchCommandIPOS" parameterOrder="in0 in1">
+
+         <wsdl:input message="impl:dispatchCommandIPOSRequest" name="dispatchCommandIPOSRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:dispatchCommandIPOSResponse" name="dispatchCommandIPOSResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="dispatchCommandEXT" parameterOrder="in0 in1">
+
+         <wsdl:input message="impl:dispatchCommandEXTRequest" name="dispatchCommandEXTRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:dispatchCommandEXTResponse" name="dispatchCommandEXTResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="DealProcessorSoapBinding" type="impl:DealProcessorServiceImpl">
+
+      <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="dispatchCommand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="dispatchCommandRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://impl.websvc" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="dispatchCommandResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://127.0.0.1:8081/bppf_inf/services/DealProcessor" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="dispatchCommandIPOS">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="dispatchCommandIPOSRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://impl.websvc" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="dispatchCommandIPOSResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://127.0.0.1:8081/bppf_inf/services/DealProcessor" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="dispatchCommandEXT">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="dispatchCommandEXTRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://impl.websvc" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="dispatchCommandEXTResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://127.0.0.1:8081/bppf_inf/services/DealProcessor" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="DealProcessorServiceImplService">
+
+      <wsdl:port binding="impl:DealProcessorSoapBinding" name="DealProcessor">
+
+         <wsdlsoap:address location="http://183.63.191.42:8081/bppf_inf/services/DealProcessor"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

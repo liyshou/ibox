@@ -1,0 +1,34 @@
+一、 环境准备
+　　1.安装：（在本文中用到的gSoap是2.8.14版本，安装包所在目录是/usr/tmp/gsoap-2.8）
+　　    # cd /usr/tmp/gsoap-2.8
+　　    # ./configure --prefix=/usr/local/gSoap（指定安装路径）
+　　    # make
+　　    # make install
+    2.卸载
+        # make uninstall
+        
+二、 生成相关文件
+　　1、通过WSDL文档，生成C/C++头文件（bestpay.h）
+        # /usr/local/gSoap/bin/wsdl2h -o bestpay.h bestpay.wsdl
+            wsdl2h常用选项
+            -o 文件名，指定输出头文件 
+            -n 名空间前缀 代替默认的ns 
+            -c 产生纯C代码，否则是C++代码 
+            -s 不要使用STL代码 
+            -t 文件名，指定type map文件，默认为typemap.dat 
+            -e 禁止为enum成员加上名空间前缀 
+            type map文件用于指定SOAP/XML中的类型与C/C++之间的转换规则，比如在wsmap.dat里写。
+
+    2、将/usr/tmp/gsoap-2.8/gsoap文件夹下的stdsoap2.cpp、stdsoap2.h和步骤1生成的bestpay.h复制到同一目录
+        
+    3、解析bestpay.h文件，生成存根程序 
+        #cd stdsoap2.c、stdsoap2.h和bestbay.h所在目录
+        # /usr/local/gSoap/bin/soapcpp2 -C -I/usr/tmp/gsoap-2.8/gsoap/import bestpay.h  
+            soapcpp2常用选项
+            -C 仅生成客户端代码 
+            -S 仅生成服务器端代码 
+            -L 不要产生soapClientLib.c和soapServerLib.c文件 
+            -c 产生纯C代码，否则是C++代码(与头文件有关) 
+            -I 指定import路径（见上文） （-I/usr/tmp/gsoap-2.8/gsoap/import 解决 Critical error: #import: Cannot open file "stlvector.h" for reading.）
+            -x 不要产生XML示例文件 
+            -i 生成C++封装(代理)，客户端为xxxxProxy.h(.cpp)，服务器端为xxxxService.h(.cpp)。

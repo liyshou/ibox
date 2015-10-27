@@ -1,0 +1,159 @@
+[PE]
+#交易类型，0-测试，1-生产
+TRADE_FLAG=1
+
+#PE服务器地址; 
+#广州生产: 132.97.120.19
+#广州测试: 132.97.42.24
+#东莞生产：192.168.1.3
+#东莞测试：192.168.1.14
+#佛山生产：132.97.42.14
+#广州，堡垒机器环境 132.97.125.8
+#广州 测试环境 172.16.27.34
+PE_IP=132.97.120.19
+
+#前置服务器端口
+#ipos_fas:23011
+#iposdg_fas:24011
+#epos_fas:25011 
+PE_PORT=23011
+
+#交费易密码服务器地址
+#广州生产：132.97.117.189
+#广州测试: 132.97.117.186
+#东莞生产：192.168.1.3
+#东莞测试: 192.168.1.14
+#34测试:172.16.27.34
+#PEPWD_IP=132.97.120.19
+
+PEPWD_IP=132.97.120.19
+ECARD_IP=132.97.120.19
+#交费易密码服务器端口
+PEPWD_PORT=23011
+
+#E卡查询端口
+ECARD_SER_PORT=23011
+
+#内部不作绑定用的机器码
+EXCMAC=0000000000000000
+
+#IPOS的MD5
+PRMMD5=0000000000000000
+
+#程序监听端口
+LISTEN_PORT=9503
+
+#程序标题
+PRM_TITLE=ipos_server
+service_stop=235500
+service_start=500
+#允许开放用CT10000来使用充值付费卡的终端,00000000表示开放所有
+CT10000_TERM=[60240052][60240426][60150106][60150103][60011016][60150490][60150491][60150492][60150493][60150494][60150495][60150496][60150497][60150498][60150499][60150500][60150391][60150392][60150393][60150394][60150395][60039015][60011010]
+
+#同一号码15分钟内不允许重复充值的业务代码，格式'0001','0002','0003'
+FORBID_BIZ='0265','0300'
+
+#不允许重复充值时间为10(分钟)
+FORBID_TIME=10
+
+#BOSS密码服务器
+PASS_IP=132.97.120.19
+PASS_PORT=23011
+
+
+#同时在线人数最大值
+MAX_ONLINE_NUM=1
+
+[DGBUS]
+#东莞公交标志.0：无东莞公交，1:有东莞公交
+DG_BUS_FLAG=0
+
+[YCT]
+YCT_VER=3
+
+#羊城通服务器地址, 第二代生产: 10.240.18.38/121.33.197.198  第三代羊城通测试 218.20.156.175 第三代羊城通生产58.62.173.38
+YCT_IP=58.62.173.38
+#羊城通服务器端口，生产: 88/8890  //第三代羊城通测试端口 5010 第三代羊城通充值端口 5006
+YCT_PORT=5006
+
+
+#羊城通月票服务器地址, 测试: 218.19.189.137 不在使用
+YCTYP_IP=218.19.189.137
+#羊城通月票服务器端口，测试: 5010 不在使用
+YCTYP_PORT=5010
+
+[COACH_TICKET]
+#长途汽车票服务器地址132.97.117.11/132.97.117.214/172.16.25.141
+COACH_TICKET_IP=132.97.117.214
+
+#长途汽车票服务器端口
+COACH_TICKET_PORT=9985
+
+[DB]
+#广州生产：Provider=OraOLEDB.Oracle.1;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=132.97.117.221)(PORT=1521)))(CONNECT_DATA=(SID=orasvr)));Password=ctsi123;User ID=ctsi;Persist Security Info=True;
+#广州备份：Provider=OraOLEDB.Oracle.1;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=132.97.117.83)(PORT=1521)))(CONNECT_DATA=(SID=pe1)));Password=ctsi123;User ID=ctsi;Persist Security Info=True;
+#广州测试：Provider=OraOLEDB.Oracle.1;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=132.97.117.198)(PORT=1521)))(CONNECT_DATA=(SID=test)));Password=ctsi123;User ID=ctsi;Persist Security Info=True;
+#东莞（连广州）生产：Provider=OraOLEDB.Oracle.1;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.3)(PORT=1521)))(CONNECT_DATA=(SID=orasvr)));Password=ctsi123;User ID=ctsi;Persist Security Info=True;
+#东莞（连广州）测试：Provider=OraOLEDB.Oracle.1;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.14)(PORT=1521)))(CONNECT_DATA=(SID=test)));Password=ctsi123;User ID=ctsi;Persist Security Info=True;
+#佛山（连广州）生产：Provider=OraOLEDB.Oracle.1;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=132.97.42.14)(PORT=1521)))(CONNECT_DATA=(SID=orasvr)));Password=ctsi123;User ID=ctsi;Persist Security Info=True;
+
+DB_CON_STR_EN = Provider=OraOLEDB.Oracle.1;Data Source=(DESCRIPTION=(ADDRESS = (PROTOCOL = TCP)(HOST = 132.97.117.137)(PORT = 1521))(ADDRESS = (PROTOCOL = TCP)(HOST = 132.97.117.138)(PORT = 1521)) (LOAD_BALANCE = yes)(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = pe.gz)));Password=CE9C20EED321009E5AACA6B360BF9AD7B58EEC5D6316225D;User ID=C7818CD3057EA7EEE5A5B0AFC6F7584BB58EEC5D6316225D;Persist Security Info=True;
+
+#数据库连接数
+MAX_CONNECT_NUM=1
+
+[DEBUG]
+#调试级别
+DEBUG_LEVEL=4
+
+#FSK调试级别 
+FSK_DEBUG=2
+
+[USER]
+#连接语句
+CONNECT_SENTENCE=欢迎使用交费易
+
+#暂停语句
+PAUSE_SENTENCE="交费易"系统升级中，请稍候再使用。
+
+[POSMAG]
+#FSK数据包
+PACKCONT=000044052008061108481400000000000000001111110006039D0F03100400160014010511200A0A20202020C7A9B5BDB3C9B9A6A3A12C31323334353637384B5F9AA470D7A867
+
+[BIZ]
+#空中充值业务代码
+AIRPAY=0169
+
+[IPOSUPDATE]
+PRMVER=9017
+
+IP=202.96.172.210
+PORT=21
+USR=ykjdownload
+PWD=ykj314159
+SRCFILE=ipos.exe.liz
+DESTFILE=ipos_new.exe.liz
+
+IP_BAK=202.96.172.210
+PORT_BAK=21
+USR_BAK=ykjdownload
+PWD_BAK=ykj314159
+SRCFILE_BAK=ipos.exe.liz
+DESTFILE_BAK=ipos_new.exe.liz
+
+EXECFILE=ipos_new.exe
+
+
+[REFRESH]
+#刷新接口的监听端口
+REFRESH_PORT=9500
+#刷新接口数据包使用的加密解密密钥
+REFRESH_KEY=1234567812345678
+#刷新接口允许进行操作的IP
+REFRESH_IP=[132.97.117.210][132.97.117.84][132.97.117.106][172.16.25.130]
+
+
+[ONLINE]
+#当日交易查询
+prefix=https://enterprise.bestpay.com.cn/bppf/BSLogin.do
+dcn_prefix=http://132.122.36.9:4443/bppf/BSLogin.do

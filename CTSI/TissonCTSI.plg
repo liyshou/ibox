@@ -1,0 +1,111 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TissonCTSI - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\HP\AppData\Local\Temp\RSP4FDB.tmp" with contents
+[
+nafxcwd.lib libcmtd.lib wsock32.lib /nologo /stack:0x2dc6c0 /subsystem:windows /incremental:yes /pdb:"Debug/TissonCTSI.pdb" /debug /machine:I386 /nodefaultlib:"nafxcwd.lib  libcmtd.lib" /out:"Debug/TissonCTSI.exe" /pdbtype:sept 
+".\Debug\3DES.obj"
+".\Debug\ADOConn.obj"
+".\Debug\AES.obj"
+".\Debug\base64.obj"
+".\Debug\cert.obj"
+".\Debug\Connect.obj"
+".\Debug\ctsipass.obj"
+".\Debug\DB.obj"
+".\Debug\Def.obj"
+".\Debug\Des.obj"
+".\Debug\DGBusTrade.obj"
+".\Debug\DGTBusTrade.obj"
+".\Debug\Global.obj"
+".\Debug\ks_soap.obj"
+".\Debug\md5.obj"
+".\Debug\MenuHdl.obj"
+".\Debug\MyCrypto.obj"
+".\Debug\MyDes.obj"
+".\Debug\Pack.obj"
+".\Debug\Print.obj"
+".\Debug\soapC.obj"
+".\Debug\soapClient.obj"
+".\Debug\StdAfx.obj"
+".\Debug\stdsoap2.obj"
+".\Debug\tinystr.obj"
+".\Debug\tinyxml.obj"
+".\Debug\tinyxmlerror.obj"
+".\Debug\tinyxmlparser.obj"
+".\Debug\TissonCTSI.obj"
+".\Debug\TissonCTSIDlg.obj"
+".\Debug\Tools.obj"
+".\Debug\Trade.obj"
+".\Debug\WrLog.obj"
+".\Debug\xmlParser.obj"
+".\Debug\YCT3_BalanceTransfer.obj"
+".\Debug\YCT3_Purchase.obj"
+".\Debug\YCT3Trade.obj"
+".\Debug\YCTYPTrade.obj"
+".\Debug\ZHBusTrade.obj"
+".\Debug\TissonCTSI.res"
+".\ssleay32.lib"
+".\libeay32.lib"
+".\TSCTSI.lib"
+]
+Creating command line "link.exe @C:\Users\HP\AppData\Local\Temp\RSP4FDB.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\Users\HP\AppData\Local\Temp\RSP52D9.tmp" with contents
+[
+/nologo /o"Debug/TissonCTSI.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\3DES.sbr"
+".\Debug\ADOConn.sbr"
+".\Debug\AES.sbr"
+".\Debug\base64.sbr"
+".\Debug\cert.sbr"
+".\Debug\Connect.sbr"
+".\Debug\ctsipass.sbr"
+".\Debug\DB.sbr"
+".\Debug\Def.sbr"
+".\Debug\Des.sbr"
+".\Debug\DGBusTrade.sbr"
+".\Debug\DGTBusTrade.sbr"
+".\Debug\Global.sbr"
+".\Debug\ks_soap.sbr"
+".\Debug\md5.sbr"
+".\Debug\MenuHdl.sbr"
+".\Debug\MyCrypto.sbr"
+".\Debug\MyDes.sbr"
+".\Debug\Pack.sbr"
+".\Debug\Print.sbr"
+".\Debug\soapC.sbr"
+".\Debug\soapClient.sbr"
+".\Debug\stdsoap2.sbr"
+".\Debug\tinystr.sbr"
+".\Debug\tinyxml.sbr"
+".\Debug\tinyxmlerror.sbr"
+".\Debug\tinyxmlparser.sbr"
+".\Debug\TissonCTSI.sbr"
+".\Debug\TissonCTSIDlg.sbr"
+".\Debug\Tools.sbr"
+".\Debug\Trade.sbr"
+".\Debug\WrLog.sbr"
+".\Debug\xmlParser.sbr"
+".\Debug\YCT3_BalanceTransfer.sbr"
+".\Debug\YCT3_Purchase.sbr"
+".\Debug\YCT3Trade.sbr"
+".\Debug\YCTYPTrade.sbr"
+".\Debug\ZHBusTrade.sbr"]
+Creating command line "bscmake.exe @C:\Users\HP\AppData\Local\Temp\RSP52D9.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TissonCTSI.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

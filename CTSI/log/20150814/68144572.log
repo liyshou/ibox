@@ -1,0 +1,43 @@
+[20150814 14:27:59.832 1316] 【FSK】len: [97]
+[20150814 14:27:59.833 1316] 【FSK】cntLen: [95]
+[20150814 14:27:59.835 1316] 【FSK】enyFlag: [1]
+[20150814 14:27:59.836 1316] 【index=0】
+[20150814 14:27:59.849 1316] -------------------------
+[20150814 14:27:59.851 1316] USBID[E552B854EC618FCB]
+[20150814 14:27:59.852 1316] 电话号码[F4CEF0EC275D072A]
+[20150814 14:27:59.855 1316] 程序MD5[0CEFE3F6FEFBAC5E]
+[20150814 14:27:59.857 1316] 终端号[68144572]
+[20150814 14:27:59.859 1316] IP[127.0.0.1]
+[20150814 14:27:59.860 1316] 请求类型[10]
+[20150814 14:27:59.861 1316] 左串口设备[0]
+[20150814 14:27:59.862 1316] 右串口设备[8]
+[20150814 14:27:59.863 1316] 内置设备[0]
+[20150814 14:27:59.863 1316] 程序版本[9020]
+[20150814 14:27:59.864 1316] 应用版本[13600351]
+[20150814 14:27:59.865 1316] 加密类型[1]
+[20150814 14:27:59.866 1316] 用户是否确认[gbl.agreeFlag]:1
+[20150814 14:27:59.867 1316] 【getEncryptType】
+[20150814 14:27:59.885 1316] 【GetRecordSet】
+[20150814 14:27:59.886 1316] ORA-00942: 表或视图不存在
+[20150814 14:27:59.887 1316] 数据库中记录的加密类型[0]，iRet[-2]
+[20150814 14:27:59.889 1316] 服务器IP:[192.168.95.130]
+[20150814 14:27:59.890 1316] DB_CON_STR = [Provider=OraOLEDB.Oracle.1;Data Source=(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 172.26.7.36)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = testdb) ) );Password=ctsi123;User ID=ctsi;Persist Security Info=True]
+[20150814 14:27:59.904 1316] vSQL:[select tgroup, phone, card_no, curworkid,reversal, epos_term.status, epos_term.input_times, epos_term.print_paper, NVL(usbid, 'FFFFFFFFFFFFFFFF') usbid, area.city_no city_no, acc_area.city_no acc_city_no, psamNum, tmk, tpk, tak, tek ,title_flag, pki_card, signin_serial, commission_free,HID_TYPE from epos_term,soft_term,area area, area acc_area, YCTYP_signin where epos_term.term_id = '68144572' and epos_term.area=area.area and epos_term.accarea=acc_area.area and epos_term.term_id=soft_term.term_id(+) and epos_term.term_id=YCTYP_signin.term_id(+) and signin_time(+)>trunc(sysdate)]
+[20150814 14:27:59.905 1316] 东莞清华同方读卡器设备[-858993460]
+[20150814 14:27:59.906 1316] 【获取数据库时间】
+[20150814 14:27:59.916 1316] 数据库时间为:142919
+[20150814 14:27:59.917 1316] 非法的终端信息 iRet=[5]
+[20150814 14:27:59.918 1316] 【FSK】【TS_OutPutMsg】【 非法的终端信息！
+请稍候再试!
+或按【Ctrl+H】联系在线客服中心 或致电400-80-11888咨询】
+[20150814 14:27:59.923 1316] 【FSK】发出数据[138]
+[20150814 14:27:59.924 1316] 【FSK】发送包内容[276]：[7D00718E4232A3729391D04E0145786D3D71BAD843A2FAD4F373830B2893219A75A4F1031BA7B5ADBC518D146E018096BFC5121E6C838ACDC00BBA7ED2404581663E7677BBD92066BFBF203AF147D6E65CDF5E74EF71ACCE458C2777022D8E66784D02C9DF92BA5E1EB87CFD79A446EB82D7260887F07902C917C667894709BAEB5B6FC3E4C26E3FF295]
+[20150814 14:27:59.925 1316] 【FSK】接收长度[0]
+[20150814 14:27:59.926 1316] 【FSK】返回包内容[0]：[]
+[20150814 14:27:59.928 1316] 【wrMonitorLog】type[10] stat[10] rspCode[7]
+[20150814 14:27:59.956 1316] 【wrMonitorLog】end
+[20150814 14:27:59.957 1316] 【时间统计】结束
+[20150814 14:27:59.959 1316] 【FSK】【TS_HangUp】
+[20150814 14:27:59.962 1316] 【FSK】发送失败
+[20150814 14:27:59.963 1316] 【FSK】rt=[-1]
+[20150814 14:27:59.965 1316] 【~CMenuHdl】
